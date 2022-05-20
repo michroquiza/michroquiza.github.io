@@ -207,6 +207,7 @@ a {
 
 .project-title {
   padding: 1.5em 0;
+  margin: 0 1.25em;
   text-align: center;
 }
 
@@ -271,4 +272,8 @@ footer {
 
 .icons {
   margin-top: 0.5em;
+}
+
+.github {
+  margin-right: -1.9px;
 }
