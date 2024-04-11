@@ -1,5 +1,5 @@
 :root {
-    --bluish-gray: #C9CEE0;
+    --gray: #e2e2e2;
     --black: #141414;
     --heading-font-size: 2.074rem;
     --subheading-font-size: 1.2rem;
@@ -18,8 +18,13 @@ html {
     scroll-behavior: smooth;
 }
 
+::selection {
+    color: var(--gray);
+    background-color: var(--black);
+}
+
 body {
-    background-color: var(--bluish-gray);
+    background-color: var(--gray);
     color: var(--black);
     font-family: var(--font-family);
     font-style: var(--font-style-regular);
@@ -126,6 +131,7 @@ a {
     place-content: center;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1em;
+
 }
 
 @media screen and (min-width:800px) {
@@ -155,6 +161,7 @@ a {
 .project-card {
     text-align: center;
     padding-bottom: 1rem;
+    border: 2px solid var(--black);
 }
 
 .project-img {
